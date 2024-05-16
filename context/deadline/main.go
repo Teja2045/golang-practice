@@ -50,7 +50,7 @@ func fetchAPI(ctx context.Context, url string, results chan<- string) {
 	resp, err := client.Do(req)
 	//body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		results <- "fuck"
+		results <- "something bad..."
 		return
 	}
 	if err != nil {
